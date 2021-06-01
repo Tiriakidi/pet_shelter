@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Приют домашних животных</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block bootstrap_header %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    {% endblock bootstrap_header %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    {% block extra_head %}
+
+    {% endblock extra_head %}
+</head>
+<body>
+    <div class="body-flex">
+        <header>
+            <div id="logo">
+                Приют для домашних животных
+            </div>
+            <form action="/pets">
+                <button class="btn  block block-text">
+                    питомцы
+                </button>
+            </form>
+            <form action="/">
+                <button class="btn  block block-text">
+                    О нас
+                </button>
+            </form>
+            <form action="/contacts">
+                <button class="btn  block block-text">
+                    контакты
+                </button>
+            </form>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+            <div class="footer-box">
+            </div>
+        </footer>
+    </div>
+</body>
