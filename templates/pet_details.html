@@ -2,20 +2,17 @@
 {% block content %}
 <div class="main-content">
     <div class="col-lg-4">
-        <a href="#">
-            <img height="400" width="400"
-                 src="{{ object.photo.url }}" alt="" class="fit">
-        </a>
+        <img height="400" width="400" 
+        src="{{ object.photo.url }}" alt="" class="fit">
+        
     </div>
     <div class="pet-bio-text">
         <ul>
             <li>Кличка: {{object.name}}</li>
             <li>Возраст: {{object.age}}</li>
             <li>Порода: {{object.breed}}</li> <br>
-
-
-            <li>{{object.info}}</li>
         </ul>
+        <span>{{object.info}}</span>
     </div>
 </div>
 {% endblock %}

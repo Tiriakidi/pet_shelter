@@ -59,20 +59,6 @@ header  {
     color: #CDAD6D;
     mix-blend-mode: normal;
 }
-.search-form{
-    width: 200px;
-    height: 48px;
-    background: #C4C4C4;
-    mix-blend-mode: luminosity;
-    border-radius: 5px;
-    font-family:Yahfie;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: #CDAD6D;
-}
 
 main{
     min-height: calc(100vh - 235px);
@@ -124,7 +110,7 @@ footer {
 	background: rgba(16, 124, 240, 0.89);
 }
 
-#icons-list {
+.icons-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -137,17 +123,5 @@ ul li{
 	list-style-type: none;
 }
 
-#copy {
-	width: 376px;
-	height: 26px;
-	font-family: Yahfie;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 26px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	color: #B8B8B8;
-}
+
 
